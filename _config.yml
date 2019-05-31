@@ -1,0 +1,134 @@
+# Site settings
+title: StackLab blog                           #博客标题
+SEOTitle: StackLab 媒体实验室 | StackLab Blog。  #显示在浏览器上搜索时显示的标题
+header-img: img/home-bg.jpg                    #显示在首页的背景图片
+email: stacklab.c@gmail.com
+description: "关于 StackLab 媒体实验室 | StackLab，Marketing（Go to Market），技术品牌推广，活动公关，整合营销，足球，滑雪，UX Designer | 这里是 StackLab 的专栏博客，做一些有趣的媒体实验，分享国内外优质内容。"    #网站介绍
+keyword: "StackLab, 博客, 个人网站, 互联网, 设计, StackLab, Marketing, 滑雪, Sketch"  #关键字
+url: ""              # your host, for absolute URL 博客地址
+baseurl: ""                             # for example, '/blog' if your blog hosted on 'host/blog'
+
+# Publish posts or collection documents with a future date.
+future: true
+
+# SNS settings
+RSS: false
+weibo_username:     StackLab
+zhihu_username:     StackLab
+github_username:    StackLab
+twitter_username:   StackLab
+#facebook_username:  huxpro
+#linkedin_username:  firstname-lastname-idxxxx
+
+
+
+# Build settings
+# from 2016, 'pygments' is unsupported on GitHub Pages. Use 'rouge' for highlighting instead.
+highlighter: rouge
+permalink: pretty
+paginate: 10
+exclude: ["less","node_modules","Gruntfile.js","package.json","README.md","README.zh.md"]
+anchorjs: true                          # if you want to customize anchor. check out line:181 of `post.html`
+# If you have timezone issue (e.g. #68) in China, uncomment to use this:
+#timezone: CN  
+
+
+
+# Gems
+# from PR#40, to support local preview for Jekyll 3.0
+# make sure you have this gem installed
+# `$ gem install jekyll-paginate`
+plugins: [jekyll-paginate]
+
+
+
+# Markdown settings
+# replace redcarpet to kramdown,
+# although redcarpet can auto highlight code, the lack of header-id make the catalog impossible, so I switch to kramdown
+# document: http://jekyllrb.com/docs/configuration/#kramdown
+markdown: kramdown
+kramdown:
+  input: GFM                            # use Github Flavored Markdown !important
+  syntax_highlighter_opts:
+    span:
+      line_numbers: false
+    block:
+      line_numbers: true
+      start_line: 1
+
+
+
+# Disqus settings
+# disqus_username: StackLab
+
+# Gitalk
+gitalk:
+    # gitalk的主要参数
+        enable: true #s是否开启评论
+        clientID: 048cf1cee756b7f2d469
+        clientSecret: 1ba4def2a7ccd8475c941397012c1d1c984ea8fd
+        repo: stacklab.github.io
+        owner: Warrengnr
+        admin: Warrengnr
+        distractionFreeMode: true #是否启用类似FB的阴影遮罩
+       # id: 页面的唯一标识，gitalk会根据这个标识自动创建的issue的标签
+ 
+
+# Netease settings
+netease_comment: false
+
+
+
+# Analytics settings
+# Baidu Analytics 
+# ba_track_id: [your track id]
+
+# Google Analytics
+ga_track_id: 'UA-141214934-1'            # Format: UA-xxxxxx-xx
+ga_domain: http://stacklab.github.io
+
+
+
+# Sidebar settings
+sidebar: true                           # 是否开启侧边栏.
+sidebar-about-description: "说点装逼的话。。。"
+sidebar-avatar: /img/avatar-stl.JPG      # 你的个人头像 这里你可以改成我在img文件夹中的两张备用照片 img/avatar-m 或 avatar-g
+
+
+
+# Featured Tags
+featured-tags: true                     # whether or not using Feature-Tags
+featured-condition-size: 1              # A tag will be featured if the size of it is more than this condition value
+
+
+
+# Progressive Web Apps
+chrome-tab-theme-color: "#000000"
+service-worker: true
+
+
+
+# MathJax rendering for layout:page (e.g. post preview)
+page-mathjax: false
+
+
+
+# Friends
+friends: [
+    {
+    #     title: "Su",
+    #     href: "http://su.gallery/"
+    # },{
+        title: "乱序",
+        href: "http://mida.re/"
+    },{
+        title: "前端外刊评论",
+        href: "http://qianduan.guru/"
+    },{
+        title: "天镶的博客",
+        href: "http://lingyu.wang/"
+    },{
+        title: "Luke 的自留地",
+        href: "http://hmqk1995.github.io"
+    },
+]
